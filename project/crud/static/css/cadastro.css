@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+strong::after {
+    content: ':';
+}
+
+li strong {
+    display: inline-block;
+    margin: 10px;
+}
+
+br {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    li strong {
+        display: block;
+        width: auto;
+    }
+
+    br {
+        display: block;
+    }
+}
